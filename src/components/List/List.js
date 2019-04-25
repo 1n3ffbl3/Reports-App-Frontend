@@ -1,7 +1,7 @@
 import React from 'react';
 import ListItem from './ListItem';
 
-function List() {
+function List({ reports }) {
 	return (
 		<ul>
 			<ListItem />
