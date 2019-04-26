@@ -3,6 +3,7 @@ import React from 'react';
 import './index.css';
 import AppContext from '../../context';
 import ReportView from '../ReportView/ReportView';
+import Form from '../../components/Form/Form';
 
 class Root extends React.Component {
 	state = {
@@ -11,10 +12,9 @@ class Root extends React.Component {
 
 	addReport = (event, newItem) => {
 		event.preventDefault();
-
-		this.setState(prevState => ({
-			[newItem.type]: [...prevState[newItem.type], newItem],
-		}));
+		this.setState({
+			reports: reports,
+		});
 	};
 
 	render() {
@@ -25,6 +25,7 @@ class Root extends React.Component {
 		return (
 			<AppContext.Provider value={contextElements}>
 				<ReportView />
+				<Form />
 			</AppContext.Provider>
 		);
 	}
