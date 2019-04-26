@@ -1,8 +1,9 @@
 {
 	"parser": "babel-eslint",
-	"extends": ["airbnb", "prettier"],
+	"extends": ["airbnb", "prettier", "prettier/react"],
 	"plugins": ["prettier"],
 	"rules": {
+		"indent": [2, "tab"],
 		"prettier/prettier": ["error"],
 		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
 	}
